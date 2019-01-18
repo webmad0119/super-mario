@@ -1,3 +1,4 @@
+//esta función mantiene el fondo del juego
 function Background(game) {
   this.game = game;
 

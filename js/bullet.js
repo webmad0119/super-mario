@@ -1,3 +1,4 @@
+//clase bala. Contiene los principios de la learning de velocidad y aceleración de la learning de animaciones avanzadas
 function Bullet(game, x, y) {
   this.game = game;
 
