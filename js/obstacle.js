@@ -1,3 +1,4 @@
+//constructor de obstáculos
 function Obstacle(game) {
   this.game = game;
 

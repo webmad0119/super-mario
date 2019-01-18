@@ -1,3 +1,4 @@
+//caracter principal del juego
 function Player(game) {
   this.game = game;
  
@@ -24,9 +25,6 @@ function Player(game) {
 
   this.setListeners();
 }
-
-var TOP_KEY = 38;
-var SPACE = 32;
 
 Player.prototype.draw = function() {
   // Documentación drawImage:
@@ -57,10 +55,10 @@ Player.prototype.draw = function() {
 
 Player.prototype.setListeners = function() {
   document.onkeydown = function(event) {
-    if (event.keyCode === TOP_KEY && this.y == this.y0) {
+    if (event.keyCode === this.game.keys.TOP_KEY && this.y == this.y0) {
       this.y -= 5;
       this.vy -= 10;
-    } else if (event.keyCode == SPACE) {
+    } else if (event.keyCode == this.game.keys.SPACE) {
       this.shoot();
     }
   }.bind(this);
